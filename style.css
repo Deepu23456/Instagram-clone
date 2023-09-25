@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80);
+}
+
+#card{
+    height: 490px;
+    width: 330px;
+    background-color: #fff;
+    border: 3px solid black;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.storiyan{
+    height: 110px;
+    width: 100%;
+    /* border-bottom: 1px solid #dadada; */
+    padding: 11.5px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.storiyan::-webkit-scrollbar{
+    display: none;
+}
+
+.story{
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    /* border: 3px solid red; */
+    background: linear-gradient(rgb(255, 149, 0),rgb(255, 68, 0),rgb(147, 45, 147),rgb(221, 9, 44),rgb(22, 22, 158));
+    /* overflow: hidden; */
+    padding: 3px;
+    display: inline-block;
+    margin-right: 5px;
+    
+}
+
+.story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+
+}
+
+.full-screen{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: none;
+    transition: display ease 2s;
+    -moz-transition: display ease 2s;
+    -webkit-transition: display ease 2s;
+    position: absolute;
+}
+
+
+
+
+.container{
+    height: 68%;
+    width: 100%;
+    background-color: #fff;
+    
+    overflow: hidden;
+    position: relative;
+    padding: 5px;
+}
+.container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.container i{
+    color: #fff;
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    opacity: 0;
+    transition: transform ease 0.3s;
+    
+}
+
+
+.love i{
+    font-size: 30px;
+    color: #403f3f;
+    margin-left: 10px;
+    
+}
+
+@media(max-width:500px){
+    #card{
+        height: 470px;
+        width: 280px;
+        
+    }
+    .story{
+        height: 75px;
+        width: 75px;
+        border-radius: 50%;
+        /* border: 3px solid red; */
+        background: linear-gradient(rgb(255, 149, 0),rgb(255, 68, 0),rgb(147, 45, 147),rgb(221, 9, 44),rgb(22, 22, 158));
+        /* overflow: hidden; */
+        padding: 3px;
+        display: inline-block;
+        margin-right: 5px;
+        
+    }
+    .container{
+        height: 68.5%;
+        width: 100%;
+        background-color: #fff;
+        
+        overflow: hidden;
+        position: relative;
+        padding: 5px;
+    }
+    .storiyan{
+        height: 97px;
+        width: 100%;
+        /* border-bottom: 1px solid #dadada; */
+        padding: 11.5px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+    
+}
